@@ -26,7 +26,7 @@
 
 html {
 	scroll-behavior: smooth;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 
 body {
@@ -86,14 +86,18 @@ body {
 @keyframes drag-x {
 	0% {
 		opacity: 0;
+		scale: 0;
+		/* display: none; */
 		transform: translateX(-100%);
 	}
 
 	80% {
 		opacity: 0;
+		/* display: none; */
 	}
 
 	100% {
+		scale: 1;
 		opacity: 1;
 		transform: translateX(0%);
 	}
@@ -102,14 +106,17 @@ body {
 @keyframes drag-reverse-x {
 	0% {
 		opacity: 0;
-		transform: translateX(100%);
+		scale: 0;
+		transform: translateX(10%);
 	}
 
 	80% {
 		opacity: 0;
+		/* scale: 0; */
 	}
 
 	100% {
+		scale: 1;
 		opacity: 1;
 		transform: translateX(0%);
 	}
@@ -134,12 +141,14 @@ body {
 	animation-timeline: view();
 	animation-range: entry 0% cover 20%;
 	animation-delay: 1s;
+	transform-origin: left;
 }
 
 .drags-reverse-x {
 	animation: drag-reverse-x 30s ease-in-out;
 	animation-timeline: view();
 	animation-range: entry 0% cover 30%;
+	transform-origin: right;
 }
 
 .box {

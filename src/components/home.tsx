@@ -4,7 +4,7 @@ import { Typewriter } from "./ui/typewriter";
 export function Home() {
 	return (
 		<section
-			className="w-full h-full  bg-gray-900 flex flex-col lg:flex-row items-center justify-center gap-8 px-10 py-3"
+			className="w-full h-full  bg-gray-900 flex flex-col lg:flex-row items-center justify-center gap-8 px-5 py-3"
 			id="home"
 		>
 			<div className="bg-green-700 w-72 h-72 p-2 rounded-full hover:shadow-xl hover:shadow-green-700 transition duration-300 ease-in">

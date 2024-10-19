@@ -23,7 +23,10 @@ export function CardProject({
 		<div
 			className={`flex ${reverse ? "flex-col lg:flex-row-reverse border-gradient bg-gradient-to-r from-gray-800 to-gray-900 border-l-2 drags-reverse-x" : "flex-col lg:flex-row border-reverse-gradient bg-gradient-to-l from-gray-800 to-gray-900 border-r-2 drags-x"} border-y-2 w-full items-center justify-end p-2 gap-9 lg:gap-3  z-10 overflow-hidden`}
 		>
-			<a href={href} className=" w-full h-[400px] image-card overflow-hidden">
+			<a
+				href={href}
+				className=" w-full lg:w-[60%] h-[400px] image-card overflow-hidden"
+			>
 				<span
 					className={`w-full h-[55%] lg:h-full lg:w-1/2 absolute ${reverse ? "lg:translate-x-full" : ""} inset-0 flex justify-center items-center hover:backdrop-blur-sm overflow-hidden card-icon-wrapper`}
 				>
