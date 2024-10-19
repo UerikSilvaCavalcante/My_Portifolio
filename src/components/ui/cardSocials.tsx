@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 interface CardSocialsProps {
 	title: string;
@@ -7,13 +7,13 @@ interface CardSocialsProps {
 }
 
 export function CardSocials({ title, icon, href }: CardSocialsProps) {
-	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+	// const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
 	const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
 		const { left, top } = e.currentTarget.getBoundingClientRect();
 		const x = e.clientX - left;
 		const y = e.clientY - top;
-		setMousePosition({ x, y });
+		// setMousePosition({ x, y });
 
 		e.currentTarget.style.setProperty("--mouse-x", `${x}px`);
 		e.currentTarget.style.setProperty("--mouse-y", `${y}px`);
