@@ -460,7 +460,7 @@ a {
 }
 
 .navigation ul li.active a .icon {
-	transform: translateY(-32px);
+	transform: translateY(-34px);
 }
 
 .navigation ul li a .text {
@@ -487,13 +487,13 @@ a {
 	background: transparent;
 	border-radius: 50%;
 	border: 1.8px solid #fff;
-	transform: translateY(-37px) scale(0);
+	transform: translateY(-35px) scale(0);
 }
 
 .navigation ul li.active a .circle {
 	transition: .5s;
 	transition-delay: .5s;
-	transform: translateY(-37px) scale(1);
+	transform: translateY(-35px) scale(1);
 }
 
 .indicator {

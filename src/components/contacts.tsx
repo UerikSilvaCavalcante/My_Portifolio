@@ -15,15 +15,13 @@ export function Contact() {
 						Contact me
 					</h1>
 					<div className="flex items-center justify-center cardAbout ">
-						<div className="z-10 border-4 border-teal-400 bg-gray-900 px-5 py-2 rounded-md">
+						<div className="z-10 border-2 border-teal-400 bg-gray-900 px-5 py-3 rounded-md">
 							<a
-								href="*"
+								href="mailto:uerisalcaval003@gmail.com"
 								className="text-teal-400 text-xl font-bold flex gap-3 "
 							>
-								Say Hello
-								<i className="bi bi-send">
-									{/* sdsds */}
-								</i>
+								Diga Olá
+								<i className="bi bi-send">{/* sdsds */}</i>
 							</a>
 						</div>
 					</div>
