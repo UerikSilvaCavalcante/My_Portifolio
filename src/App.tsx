@@ -6,7 +6,6 @@ import { useEffect } from "react";
 import { MobileNavbar } from "./components/mobilenavbar";
 import { ResumeButton } from "./components/resumebutton";
 
-
 function App() {
 	const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -21,7 +20,7 @@ function App() {
 
 	return (
 		<>
-			<div className="w-full bg-gray-900 px-4">
+			<div className="w-full bg-gray-900 px-2">
 				<ResumeButton />
 				{isMobile ? <MobileNavbar /> : <Navbar />}
 				<Body />
