@@ -2,7 +2,7 @@ import { CardProject } from "./ui/cardProj";
 import InOrbit from "../assets/Inorbit2.png";
 import BuscaCep from "../assets/buscaCep.png";
 import ControledeContatos from "../assets/ControledeContatos.png";
-import PlayerDeAudioBook from "../assets/PlayerdeaudioBook.png";
+import PlayerDeAudioBook from "../assets/Playerdeaudiobook.png";
 import Quiz from "../assets/Quiz.png";
 
 export function Projects() {
