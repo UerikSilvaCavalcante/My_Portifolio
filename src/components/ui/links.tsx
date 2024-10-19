@@ -18,6 +18,7 @@ export function Link({ href, name, icon, isActive, onClick }: LinkProps) {
 				onClick={onClick}
 				className={`${isActive ? "linkactive" : ""} text-xl flex gap-2 font-bold p-2 relative  bg-clip-text text-transparent bg-gradient-to-r from-green-600  to-teal-400 link`}
 			>
+				{/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
 				<i className={icon}></i>
 				{name}
 			</a>

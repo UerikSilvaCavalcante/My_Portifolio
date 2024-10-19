@@ -21,7 +21,9 @@ export function Contact() {
 								className="text-teal-400 text-xl font-bold flex gap-3 "
 							>
 								Say Hello
-								<i className="bi bi-send"></i>
+								<i className="bi bi-send">
+									{/* sdsds */}
+								</i>
 							</a>
 						</div>
 					</div>

@@ -22,6 +22,7 @@ export function Engine({ title, icons, flexCol }: EnginProps) {
 			>
 				{icons.map(({ icon, alt }) => {
 					return (
+						// biome-ignore lint/correctness/useJsxKeyInIterable: <explanation>
 						<img
 							src={icon}
 							alt={alt}

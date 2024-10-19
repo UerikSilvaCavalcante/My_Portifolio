@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "./ui/links";
-// Certifique-se de que o caminho está correto
+import { useEffect, useState } from "react";
 
+// Certifique-se de que o caminho está correto
 export const MobileNavbar: React.FC = () => {
 	const [activeLink, setActiveLink] = useState<number | null>(null);
 
@@ -29,14 +28,17 @@ export const MobileNavbar: React.FC = () => {
 		}
 
 		function activeLinkHandler(this: HTMLElement) {
+			// biome-ignore lint/complexity/noForEach: <explanation>
 			list.forEach((item) => item.classList.remove("active"));
 			this.classList.add("active");
 		}
 
+		// biome-ignore lint/complexity/noForEach: <explanation>
 		list.forEach((item) => item.addEventListener("click", activeLinkHandler));
 		window.addEventListener("scroll", handleScroll);
 
 		return () => {
+			// biome-ignore lint/complexity/noForEach: <explanation>
 			list.forEach((item) =>
 				item.removeEventListener("click", activeLinkHandler),
 			);
@@ -63,49 +65,49 @@ export const MobileNavbar: React.FC = () => {
 				<li className="list active">
 					<a href="#home">
 						<span className="icon">
-							<i className="bi bi-house"></i>
+							<i className="bi bi-house">{/* asd */}</i>
 						</span>
 						<span className="text">Home</span>
-						<span className="circle"></span>
+						<span className="circle">{/* sdsd */}</span>
 					</a>
 				</li>
 				<li className="list">
 					<a href="#about">
 						<span className="icon">
-							<i className="bi bi-person"></i>
+							<i className="bi bi-person">{/* sdsd */}</i>
 						</span>
 						<span className="text">Profile</span>
-						<span className="circle"></span>
+						<span className="circle">{/* dsdfsd */}</span>
 					</a>
 				</li>
 				<li className="list">
 					<a href="#tecnologies">
 						<span className="icon">
-							<i className="bi bi-gear-fill"></i>
+							<i className="bi bi-gear-fill">{/* sdasdas */}</i>
 						</span>
 						<span className="text">Tecnologies</span>
-						<span className="circle"></span>
+						<span className="circle">{/* dsfsdf */}</span>
 					</a>
 				</li>
 				<li className="list">
 					<a href="#projects">
 						<span className="icon">
-							<i className="bi bi-code-slash"></i>
+							<i className="bi bi-code-slash">{/* lasdk */}</i>
 						</span>
 						<span className="text">Projects</span>
-						<span className="circle"></span>
+						<span className="circle">{/* lkasdj */}</span>
 					</a>
 				</li>
 				<li className="list">
 					<a href="#contact">
 						<span className="icon">
-							<i className="bi bi-telephone"></i>
+							<i className="bi bi-telephone">{/* sdas */}</i>
 						</span>
 						<span className="text">Contacts</span>
-						<span className="circle"></span>
+						<span className="circle">{/* asd */}</span>
 					</a>
 				</li>
-				<div className="indicator"></div>
+				<div className="indicator">{/* asd */}</div>
 			</ul>
 		</div>
 	);

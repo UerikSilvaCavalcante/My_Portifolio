@@ -25,12 +25,14 @@ export function CardSocials({ title, icon, href }: CardSocialsProps) {
 			onMouseMove={handleMouseMove}
 		>
 			<div className="card-content p-8">
+				{/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
 				<i className={`bi ${icon} text-9xl text-zinc-400`}></i>
 				<h1 className="text-xl text-zinc-400 font-bold">{title}</h1>
 				<a
 					href={href}
 					className="flex text-zinc-500 bg-gray-700 gap-2 px-5 w-12 py-1"
 				>
+					{/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
 					<i className="bi bi-link-45deg"></i>
 					Follow me
 				</a>

@@ -1,5 +1,4 @@
 import Resume from "../assets/Uerik Saldanha Curriculo Profissional.pdf";
-import { useTranslation } from "react-i18next";
 
 export function ResumeButton() {
 	return (
@@ -10,8 +9,10 @@ export function ResumeButton() {
 			rel="noopener noreferrer"
 		>
 			<span className="button__icon-wrapper">
+				{/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
 				<i className="bi bi-arrow-up-right button__icon-svg"></i>
 
+				{/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
 				<i className="bi bi-arrow-up-right button__icon-svg button__icon-svg--copy"></i>
 			</span>
 			Curriculo

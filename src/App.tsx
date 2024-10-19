@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Background } from "./components/background";
 import "./App.css";
 import { Navbar } from "./components/navbar";
 import { Body } from "./components/body";
