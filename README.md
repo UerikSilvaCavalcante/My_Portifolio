@@ -11,6 +11,8 @@ Este projeto é um portfólio web desenvolvido utilizando tecnologias modernas p
 - **ESLint**: Ferramenta de linting para identificar e corrigir problemas no código JavaScript.
 - **Babel**: Compilador JavaScript utilizado pelo plugin `@vitejs/plugin-react` para Fast Refresh.
 - **SWC**: Compilador JavaScript utilizado pelo plugin `@vitejs/plugin-react-swc` para Fast Refresh.
+- **Tailwind css**: Modulo para o Front-end, use a o arquivo `tailwind.config.js`.
+- **Biome**: Descreve uma funcionalidade específica do projeto relacionada a biomas. 
 
 ## Configuração do ESLint
 
