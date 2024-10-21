@@ -50,7 +50,7 @@ export function Navbar() {
 				/>
 				<Link
 					href="#about"
-					name="About"
+					name="Sobre"
 					icon="bi bi-person"
 					key={1}
 					isActive={activeLink === 1}
@@ -58,7 +58,7 @@ export function Navbar() {
 				/>
 				<Link
 					href="#tecnologies"
-					name="Tecnologies"
+					name="Tecnologias"
 					icon="bi bi-gear-fill"
 					key={2}
 					isActive={activeLink === 2}
@@ -66,7 +66,7 @@ export function Navbar() {
 				/>
 				<Link
 					href="#projects"
-					name="Projects"
+					name="Projetos"
 					icon="bi bi-code-slash"
 					key={3}
 					isActive={activeLink === 3}
@@ -74,7 +74,7 @@ export function Navbar() {
 				/>
 				<Link
 					href="#contact"
-					name="Contact"
+					name="Contato"
 					icon="bi bi-telephone"
 					key={4}
 					isActive={activeLink === 4}

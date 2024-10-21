@@ -8,11 +8,11 @@ export function Contact() {
 		>
 			<div className="flex flex-col items-center justify-center gap-2">
 				<h1 className="flex text-center text-xl text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-400 font-bold">
-					Do you Like?
+					Gostou do meu trabalho?
 				</h1>
 				<div className="flex flex-col gap-3 items-center justify-center">
 					<h1 className="flex text-center text-3xl text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-400 font-bold">
-						Contact me
+						Entre em contato comigo
 					</h1>
 					<div className="flex items-center justify-center cardAbout ">
 						<div className="z-10 border-2 border-teal-400 bg-gray-900 px-5 py-3 rounded-md">
@@ -28,7 +28,7 @@ export function Contact() {
 				</div>
 			</div>
 			<h1 className="flex text-center text-3xl text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-400 font-bold border-b-2 border-teal-400 p-2">
-				My Socials
+				Minha redes sociais
 			</h1>
 			<div className="flex justify-center items-center gap-2" id="cards">
 				<CardSocials icon="bi-instagram" title="Instagram" href="*" />
