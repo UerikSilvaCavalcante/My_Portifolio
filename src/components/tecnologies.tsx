@@ -90,16 +90,16 @@ export function Tecnologies() {
 			id="tecnologies"
 		>
 			<h1 className="text-4xl p-4 text-transparent  bg-clip-text bg-gradient-to-r from-green-600  to-teal-400 font-bold ">
-				My Tecnologies
+				Minha Tecnologias
 			</h1>
 			<div className="w-full px-1 flex flex-col lg:flex-row items-center justify-center gap-8">
 				<div className="flex flex-col border-t-2 justify-evenly border-b-2 border-l-2  p-4 rounded-md border-gradient">
-					<Engine title="DataBases" icons={DataBaseIcons} />
+					<Engine title="Banco de Dados" icons={DataBaseIcons} />
 					<Engine title="Linguagens" icons={LenguagesIcons} />
-					<Engine title="Frameworks/Modules" icons={FrameworksIcons} />
+					<Engine title="Frameworks/Modulos" icons={FrameworksIcons} />
 				</div>
 				<div className="h-full items-center justify-center border-t-2 border-b-2 border-r-2 p-[30px] border-reverse-gradient">
-					<Engine title="Others" icons={OtterIcons} flexCol={true} />
+					<Engine title="Outros" icons={OtterIcons} flexCol={true} />
 				</div>
 			</div>
 		</section>

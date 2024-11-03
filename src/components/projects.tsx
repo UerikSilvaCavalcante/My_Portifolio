@@ -37,7 +37,7 @@ export function Projects() {
 						tags={["HTML", "CSS", "Javascript", "API", "Bootstrap"]}
 						repository="https://github.com/UerikSilvaCavalcante/Pega_CEP"
 						reverse={true}
-						href="buscaendereco.netlify.app"
+						href="https://buscaendereco.netlify.app/"
 						src={BuscaCep}
 					/>
 				</div>
