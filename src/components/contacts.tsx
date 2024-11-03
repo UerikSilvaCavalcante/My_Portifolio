@@ -17,7 +17,7 @@ export function Contact() {
 					<div className="flex items-center justify-center cardAbout ">
 						<div className="z-10 border-2 border-teal-400 bg-gray-900 px-5 py-3 rounded-md">
 							<a
-								href="mailto:uerisalcaval003@gmail.com"
+								href="https://wa.me/5562981545545"
 								className="text-teal-400 text-xl font-bold flex gap-3 "
 							>
 								Diga Olá
