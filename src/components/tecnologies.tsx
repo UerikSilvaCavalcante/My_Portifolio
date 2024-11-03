@@ -90,7 +90,7 @@ export function Tecnologies() {
 			id="tecnologies"
 		>
 			<h1 className="text-4xl p-4 text-transparent  bg-clip-text bg-gradient-to-r from-green-600  to-teal-400 font-bold ">
-				Minha Tecnologias
+				Minhas Tecnologias
 			</h1>
 			<div className="w-full px-1 flex flex-col lg:flex-row items-center justify-center gap-8">
 				<div className="flex flex-col border-t-2 justify-evenly border-b-2 border-l-2  p-4 rounded-md border-gradient">
