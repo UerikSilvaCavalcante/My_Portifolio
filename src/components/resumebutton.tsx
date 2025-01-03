@@ -1,4 +1,4 @@
-import Resume from "../assets/Uerik Saldanha Curriculo Profissional.pdf";
+import Resume from "../assets/Curriculo Profissional Uerik Saldanha.pdf";
 
 export function ResumeButton() {
 	return (
