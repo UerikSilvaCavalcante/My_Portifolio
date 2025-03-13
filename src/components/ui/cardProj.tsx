@@ -21,7 +21,7 @@ export function CardProject({
 }: CardProjectProps) {
 	return (
 		<div
-			className={`flex ${reverse ? "flex-col lg:flex-row-reverse border-gradient bg-gradient-to-r from-gray-800 to-gray-900 border-l-2 drags-reverse-x" : "flex-col lg:flex-row border-reverse-gradient bg-gradient-to-l from-gray-800 to-gray-900 border-r-2 drags-x"} border-y-2 w-full items-center justify-end p-2 gap-9 lg:gap-3  z-10 overflow-hidden`}
+			className={`flex ${reverse ? "flex-col lg:flex-row-reverse border-gradient bg-gradient-to-r from-gray-800 to-gray-900 border-l-2 proj-reverse" : "flex-col lg:flex-row border-reverse-gradient bg-gradient-to-l from-gray-800 to-gray-900 border-r-2 proj"} border-y-2 w-full items-center justify-end p-2 gap-9 lg:gap-3  z-10 overflow-hidden relative projetos`}
 		>
 			<a
 				href={href}

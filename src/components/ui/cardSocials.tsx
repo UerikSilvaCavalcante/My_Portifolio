@@ -21,7 +21,7 @@ export function CardSocials({ title, icon, href }: CardSocialsProps) {
 
 	return (
 		<div
-			className="card cardSocialappear flex flex-col items-center justify-center p-4 gap-4 glass-effect"
+			className="card appear flex flex-col items-center justify-center p-4 gap-4 glass-effect"
 			onMouseMove={handleMouseMove}
 		>
 			<div className="card-content p-8">

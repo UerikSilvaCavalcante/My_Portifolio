@@ -83,44 +83,8 @@ body {
 	}
 }
 
-@keyframes drag-x {
-	0% {
-		opacity: 0;
-		scale: 0;
-		/* display: none; */
-		transform: translateX(-100%);
-	}
 
-	80% {
-		opacity: 0;
-		/* display: none; */
-	}
 
-	100% {
-		scale: 1;
-		opacity: 1;
-		transform: translateX(0%);
-	}
-}
-
-@keyframes drag-reverse-x {
-	0% {
-		opacity: 0;
-		scale: 0;
-		transform: translateX(10%);
-	}
-
-	80% {
-		opacity: 0;
-		/* scale: 0; */
-	}
-
-	100% {
-		scale: 1;
-		opacity: 1;
-		transform: translateX(0%);
-	}
-}
 
 .surges {
 	animation: surge 5s ease-in-out;
