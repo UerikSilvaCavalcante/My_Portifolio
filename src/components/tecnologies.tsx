@@ -11,7 +11,7 @@ export function Tecnologies() {
       scrollTrigger: {
         trigger: "#tecnologies",
         start: "top +=500",
-        end: "+=500",
+        end: "bottom center",
         toggleActions: "restart pause reverse pause",
         // pin: true,
         scrub: 1,

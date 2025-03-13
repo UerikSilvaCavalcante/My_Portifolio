@@ -32,7 +32,7 @@ export function Projects() {
         {
           opacity: 1,
           x: 0,
-          duration: 1,
+          duration: 0.5,
           stagger: 0.5,
         }
       ),
@@ -45,7 +45,7 @@ export function Projects() {
         {
           opacity: 1,
           x: 0,
-          duration: 2,
+          duration: 1,
           stagger: 0.5,
         }
       ),

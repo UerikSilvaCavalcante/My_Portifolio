@@ -10,11 +10,11 @@ export function Contact() {
       scrollTrigger: {
         trigger: "#contact",
         start: "top +=500",
-        end: "+=500",
+        end: "bottom center",
         toggleActions: "restart pause reverse pause",
         // pin: true,
         scrub: 1,
-        
+        // markers: true,
       },
     });
     tl.add([
