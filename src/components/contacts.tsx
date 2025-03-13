@@ -1,7 +1,6 @@
 import { CardSocials } from "./ui/cardSocials";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useLayoutEffect } from "react";
 import { useEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 

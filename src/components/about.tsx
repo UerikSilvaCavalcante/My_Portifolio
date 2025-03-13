@@ -1,7 +1,6 @@
 import { Card } from "./ui/card";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useLayoutEffect } from "react";
 import { useEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -16,7 +15,6 @@ export function About() {
         toggleActions: "restart pause reverse pause",
         // pin: true,
         scrub: 1,
-        
       },
     });
     tl.add([

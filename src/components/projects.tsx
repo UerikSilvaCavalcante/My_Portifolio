@@ -6,7 +6,6 @@ import PlayerDeAudioBook from "../assets/Playerdeaudiobook.png";
 import Quiz from "../assets/Quiz.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useLayoutEffect } from "react";
 import { useEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
