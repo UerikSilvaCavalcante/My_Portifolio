@@ -3,6 +3,7 @@ import InOrbit from "../assets/Inorbit2.png";
 import BuscaCep from "../assets/buscaCep.png";
 import ControledeContatos from "../assets/ControledeContatos.png";
 import PlayerDeAudioBook from "../assets/Playerdeaudiobook.png";
+import TeiaApp from "../assets/TeiaApp.png";
 import Quiz from "../assets/Quiz.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -78,11 +79,29 @@ export function Projects() {
             src={InOrbit}
           />
           <CardProject
+            title="Gerenciador de Vistorias"
+            description="Este é um projeto fullstack que desenvolvi para gerenciar vistorias de imoveis, ele e baseado em um app ja existente, que tem como publico alvo engenheiros civis."
+            tags={[
+              "React.js",
+              "Typescipt",
+              "tailwindcss",
+              "dotnet",
+              "PostgreSQL",
+              "Next.js",
+              "CSharp",
+
+            ]}
+            repository="https://github.com/UerikSilvaCavalcante/GerenciadorDeVistorias"
+            reverse={true}
+            href="https://gerenciador-de-vistorias.vercel.app/"
+            src={TeiaApp}
+          />
+          <CardProject
             title="Busca CEP"
             description='O projeto "Consulta de Endereço por CEP" é uma aplicação web que permite aos usuários buscar informações detalhadas de endereço usando um CEP.'
             tags={["HTML", "CSS", "Javascript", "API", "Bootstrap"]}
             repository="https://github.com/UerikSilvaCavalcante/Pega_CEP"
-            reverse={true}
+            reverse={false}
             href="https://buscaendereco.netlify.app/"
             src={BuscaCep}
           />
@@ -93,7 +112,7 @@ export function Projects() {
             description='O sistema "Controle de Contatos" é uma aplicação web desenvolvida em C# com o framework ASP.NET MVC. Seu objetivo principal é gerenciar contatos de forma eficiente e segura, utilizando PostgreSQL para armazenamento e manipulação dos dados.'
             tags={["C#", "ASP.NET core", "Bootstrap", "PostgreSQL"]}
             repository="https://github.com/UerikSilvaCavalcante/ControledeContatos"
-            reverse={false}
+            reverse={true}
             href="https://controledecontatos.onrender.com"
             src={ControledeContatos}
           />
@@ -102,7 +121,7 @@ export function Projects() {
             description='O projeto "Audiobook Online" é uma aplicação web que permite aos usuários ouvir audiolivros de maneira simples e eficiente. Desenvolvido com React.js e Vite, este projeto oferece uma experiência de usuário suave e interativa.'
             tags={["React.js", "Vite", "Bootstrap", "API"]}
             repository="https://github.com/UerikSilvaCavalcante/PlayerDeAudioBook"
-            reverse={true}
+            reverse={false}
             href="https://playeraudiobook.netlify.app/"
             src={PlayerDeAudioBook}
           />
@@ -111,7 +130,7 @@ export function Projects() {
             description='O projeto "Quiz Interativo" é uma aplicação web que oferece uma experiência de quiz divertida e desafiadora.'
             tags={["HTML", "CSS", "Javascript"]}
             repository="https://github.com/UerikSilvaCavalcante/Quiz"
-            reverse={false}
+            reverse={true}
             href="https://ueriksilvacavalcante.github.io/Quiz/"
             src={Quiz}
           />
