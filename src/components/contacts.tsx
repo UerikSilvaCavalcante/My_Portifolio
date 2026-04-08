@@ -6,33 +6,29 @@ gsap.registerPlugin(ScrollTrigger);
 
 export function Contact() {
   useEffect(() => {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#contact",
-        start: "top +=500",
-        end: "bottom center",
-        toggleActions: "restart pause reverse pause",
-        // pin: true,
-        scrub: 1,
-        // markers: true,
-      },
-    });
-    tl.add([
+    const ctx = gsap.context(() => {
       gsap.fromTo(
         ".appear",
-        {
-          opacity: 0,
-          y: 300,
-        },
+        { opacity: 0, y: 50 },
         {
           opacity: 1,
           y: 0,
-          duration: 1,
-          stagger: 0.3,
-        }
-      ),
-    ]);
-  });
+          duration: 3,
+          stagger: 0.2,
+          delay: 1.5,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: "#contact",
+            start: "top 85%",
+            end: "bottom 90%",
+            toggleActions: "play none none restart",
+          },
+        },
+      );
+    });
+
+    return () => ctx.revert();
+  }, []);
   return (
     <section
       className="w-full h-full  bg-gray-900 flex flex-col items-center justify-center gap-8 p-8"

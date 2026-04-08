@@ -22,11 +22,11 @@ export function Engine({ title, icons, flexCol }: EnginProps) {
       >
         {icons.map(({ icon, alt }) => {
           return (
-            // biome-ignore lint/correctness/useJsxKeyInIterable: <explanation>
             <img
+              key={alt}
               src={icon}
               alt={alt}
-              className=" w-16 h-16 drop-shadow-2xl  grayscale hover:grayscale-0 transition-all duration-300 hover:-translate-y-2 "
+              className="w-16 h-16 lg:w-[5vw] lg:h-[8vh] drop-shadow-2xl  grayscale hover:grayscale-0 transition-all duration-300 hover:-translate-y-2 "
             />
           );
         })}

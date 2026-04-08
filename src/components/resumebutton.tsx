@@ -4,7 +4,7 @@ export function ResumeButton() {
   return (
     <a
       href={Resume}
-      className="button fixed top-4 right-10  md:translate-y-[80px] z-40 transition duration-300 ease-in-out"
+      className="button fixed top-4 right-10 lg:top-0   md:translate-y-[92vh] z-40 transition duration-300 ease-in-out"
       target="_blank"
       rel="noopener noreferrer"
     >

@@ -7,46 +7,47 @@ gsap.registerPlugin(ScrollTrigger);
 
 export function About() {
   useEffect(() => {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#about",
-        start: "top +=500",
-        end: "+=500",
-        toggleActions: "restart pause reverse pause",
-        // pin: true,
-        scrub: 1,
-      },
-    });
-    tl.add([
+    const ctx = gsap.context(() => {
       gsap.fromTo(
         ".cardAbout",
-        {
-          opacity: 0,
-          y: 300,
-        },
+        { opacity: 0, y: 100 },
         {
           opacity: 1,
           y: 0,
-          duration: 1,
-          stagger: 0.5,
-          //   ease: "power3.out",
-        }
-      ),
+          duration: 0.6,
+          stagger: 0.15,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: "#about",
+            start: "top 80%",
+            end: "bottom 70%",
+
+            scrub: true,
+            toggleActions: "play none none reverse",
+          },
+        },
+      );
+
       gsap.fromTo(
         ".about",
-        {
-          opacity: 0,
-          x: -100,
-        },
+        { opacity: 0, x: -50 },
         {
           opacity: 1,
           x: 0,
-          duration: 2,
-          stagger: 0.5,
-          //   ease: "power3.out",
-        }
-      ),
-    ]);
+          duration: 0.6,
+          ease: "power2.out",
+
+          scrollTrigger: {
+            trigger: ".about",
+            start: "top 65%",
+
+            toggleActions: "play none none reverse",
+          },
+        },
+      );
+    });
+
+    return () => ctx.revert();
   }, []);
   return (
     <section

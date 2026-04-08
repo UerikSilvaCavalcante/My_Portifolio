@@ -7,33 +7,28 @@ gsap.registerPlugin(ScrollTrigger);
 
 export function Tecnologies() {
   useEffect(() => {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#tecnologies",
-        start: "top +=500",
-        end: "bottom center",
-        toggleActions: "restart pause reverse pause",
-        // pin: true,
-        scrub: 1,
-        // markers: true,
-      },
-    });
-    tl.add([
+    const ctx = gsap.context(() => {
       gsap.fromTo(
         ".back",
-        {
-          opacity: 0,
-          scale: 0.5,
-        },
+        { opacity: 0, scale: 0.9 },
         {
           opacity: 1,
           scale: 1,
-          duration: 1,
-          stagger: 0.5,
-        }
-      )]);
-	
-    
+          duration: 0.5,
+          stagger: 0.1,
+          ease: "back.out(1.2)",
+          scrollTrigger: {
+            trigger: "#tecnologies",
+            start: "top 60%",
+            end: "bottom 70%",
+            scrub: true,
+            toggleActions: "play none none reverse",
+          },
+        },
+      );
+    });
+
+    return () => ctx.revert();
   }, []);
 
   const LenguagesIcons = [
@@ -121,19 +116,19 @@ export function Tecnologies() {
   ];
   return (
     <section
-      className="w-full   bg-gray-900 flex flex-col items-start justify-start py- lg:py-20  px-3"
+      className="w-full bg-gray-900 flex flex-col items-start justify-start py- lg:py-20 px-3"
       id="tecnologies"
     >
-      <h1 className="text-4xl p-4 text-transparent  bg-clip-text bg-gradient-to-r from-green-600  to-teal-400 font-bold ">
+      <h1 className="text-4xl p-4 text-transparent text-center w-full bg-clip-text bg-gradient-to-r from-green-600 to-teal-400 font-bold">
         Minhas Tecnologias
       </h1>
       <div className="w-full px-1 flex flex-col lg:flex-row items-center justify-center gap-8">
-        <div className="flex flex-col border-t-2 justify-evenly border-b-2 border-l-2  p-4 rounded-md border-gradient">
+        <div className="back w-[75%] flex flex-col border-t-2 justify-evenly border-b-2 border-l-2 p-4 rounded-md border-gradient">
           <Engine title="Banco de Dados" icons={DataBaseIcons} />
           <Engine title="Linguagens" icons={LenguagesIcons} />
           <Engine title="Frameworks/Modulos" icons={FrameworksIcons} />
         </div>
-        <div className="h-full items-center justify-center border-t-2 border-b-2 border-r-2 p-[30px] border-reverse-gradient">
+        <div className="back h-full items-center justify-center border-t-2 border-b-2 border-r-2 p-[30px] border-reverse-gradient">
           <Engine title="Outros" icons={OtterIcons} flexCol={true} />
         </div>
       </div>
